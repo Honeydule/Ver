@@ -1,0 +1,10 @@
+arm_controller:
+    type: position_controllers/JointTrajectoryController
+    publish_rate: 50
+    joints:
+      - base_joint
+      - p0_joint
+      - p1_joint
+      - p2_joint
+      - p3_joint
+      - p4_joint
