@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <sdf version='1.6'>
-  <model name='poke_arm_mod1'>
+  <model name='ver'>
     <link name='p0_link'>
       <pose frame=''>-0 -0 0.095 0 -0.000119 0</pose>
       <inertial>
