@@ -1,2 +1,2 @@
 ver_control:ver_description:ver_gazebo
--DCATKIN_DEVEL_PREFIX=/home/jerem/Bureau/projet_worm/urdf_robot/poke_arm/catkin_ver3/devel -DCMAKE_INSTALL_PREFIX=/home/jerem/Bureau/projet_worm/urdf_robot/poke_arm/catkin_ver3/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/jerem/Bureau/impr_ver/git/Ver/catkin_ver3/devel -DCMAKE_INSTALL_PREFIX=/home/jerem/Bureau/impr_ver/git/Ver/catkin_ver3/install -G Unix Makefiles

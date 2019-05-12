@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "ver_control"
-PROJECT_SPACE_DIR = "/home/jerem/Bureau/projet_worm/urdf_robot/poke_arm/catkin_ver3/install"
+PROJECT_SPACE_DIR = "/home/jerem/Bureau/impr_ver/git/Ver/catkin_ver3/install"
 PROJECT_VERSION = "0.0.0"
