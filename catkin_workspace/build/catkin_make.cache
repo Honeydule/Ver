@@ -1,0 +1,2 @@
+poke_control:poke_description:poke_gazebo:poke_moveit_config:ver_au_plafond
+-DCATKIN_DEVEL_PREFIX=/home/vincent/catkin_workspace/devel -DCMAKE_INSTALL_PREFIX=/home/vincent/catkin_workspace/install -G Unix Makefiles
