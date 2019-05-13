@@ -1,0 +1,8 @@
+prefix=/home/vincent/catkin_workspace/install
+
+Name: ver_au_plafond
+Description: Description of ver_au_plafond
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/vincent/catkin_workspace/install/lib 
+Requires: 
