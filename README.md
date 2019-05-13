@@ -111,7 +111,14 @@ Par la suite après avoir lancer le programme de simulation du ver vous aller vo
 ```bash
 $ fmpeg -r 30 -pattern_type glob -i '/tmp/camera_save_ver/default_distorted_camera_link_camera*.jpg' -c:v libx264 my_camera.mp4
 ```
-Après avoir obtenue la vidéo au format mp4 placer la sur votre Bureau.
+Après avoir obtenue la vidéo au format mp4 placer la sur votre Bureau. Au sein du github il y a package du nom de aruco-3.1.0 accéder au sous-dossier utils/
+
+Pour pouvoir effectuer un test de détection des arucos utiliser la commande :
+```bash
+$ ./aruco_test  ~/Bureau/my_camera.mp4
+```
+En fonction du résultat obtenue vous pouvez décider de calibrer votre caméra ou non.
+
 
 
 
