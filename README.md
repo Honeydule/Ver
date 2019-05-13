@@ -38,3 +38,16 @@ un ver au plafond
   <node name="robot_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
    args="-urdf -param robot_description -model [nom_model]" />
   ```
+  
+## Lancer le Modèle intéraction utilisateur avec le menu python
+
+* Dans le dossier catkin_ws sourcer
+```bash
+$ source devel/setup
+```
+Lancer la commande python3
+```Python3 
+python3 chemin_vers_ton_menu/menu.py
+```
+## Lancer le modèle avec le module ROS
+
