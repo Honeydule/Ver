@@ -86,7 +86,7 @@ la fenêtre qui s'affiche.
 
 ## Détection des marqueurs Aruco
 
-Afin de pouvoir vérifier si la calibration effectuée a été efficace, il est nécessaire d'effectuer une détection des marqueurs Aruco. Pour cela un package de détection est mis à disposition.
+Afin de pouvoir vérifier si la calibration a été efficace, il est nécessaire d'effectuer une détection des marqueurs Aruco. Pour cela un package de détection est mis à disposition.
 
 La première étape est de capturer une séquence d'image  perçue par la caméra. Pour pouvoir le faire éditer le fichier model.sdf de la caméra au sein du package ver_au_plafond et décommenter la ligne suivante :
 
@@ -112,6 +112,7 @@ Par la suite après avoir lancer le programme de simulation du ver vous aller vo
 $ fmpeg -r 30 -pattern_type glob -i '/tmp/camera_save_ver/default_distorted_camera_link_camera*.jpg' -c:v libx264 my_camera.mp4
 ```
 Après avoir obtenue la vidéo au format mp4 placer la sur votre Bureau.
+
 
 
 
