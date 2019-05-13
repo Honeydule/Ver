@@ -1,5 +1,6 @@
 # Ver
-un ver au plafond
+
+Git du projet : https://github.com/Honeydule/Ver
 
 ## Simulation du ver
 
@@ -33,7 +34,8 @@ un ver au plafond
 **Attention** dans le cas des XACRO ,il est necessaire d'ajouter un `param` permetant de convertir un .urdf.xacro en .urdf:
 
 ```xml
- <param name="robot_description" command="$(find xacro)/xacro.py '$(find [nom_package])/urdf/[nom_robot].urdf.xacro'"/>
+ <param name="robot_description" command="$(find xacro)/xacro.py 
+ '$(find [nom_package])/urdf/[nom_robot].urdf.xacro'"/>
 
   <node name="robot_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
    args="-urdf -param robot_description -model [nom_model]" />
