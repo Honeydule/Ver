@@ -78,8 +78,43 @@ $ roslaunch ver_au_plafond ver_au_plafond.launch
 ## Lancer la calibration 
 
 Pour la calibration de la caméra parmis les modèles une planche de calibration a été introduite. Lors de l'installation de ros gazebo-9
-Par défaut un package permettant la calibration de la caméra est installé, plus d'information : http://wiki.ros.org/camera_calibration/Tutorials/MonocularCalibration
+Par défaut un package permettant la calibration de la caméra est installé, plus d'information : 
+http://wiki.ros.org/camera_calibration/Tutorials/MonocularCalibration
 
 Les valeurs de calibration peuvent être directement inscrite au sein du fichier en choisissant l'option commit dans
 la fenêtre qui s'affiche.
+
+## Détection des marqueurs Aruco
+
+Afin de pouvoir vérifier si la calibration effectuée a été efficace, il est nécessaire d'effectuer une détection des marqueurs Aruco. Pour cela un package de détection est mis à disposition.
+
+La première étape est de capturer une séquence d'image  perçue par la caméra. Pour pouvoir le faire éditer le fichier model.sdf de la caméra au sein du package ver_au_plafond et décommenter la ligne suivante :
+
+```xml
+<save enabled="true">
+              <path>/tmp/camera_save_ver</path>
+         </save>
+```
+
+Puis passer en commentaire en les lignes concernant le plugin :
+```xml
+<plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+ ......
+ </plugin>
+
+```
+Pour le moment l'enregistrement de la vidéo n'arrive pas à se faire correctement quand le plugin est spécifié au sein du script.
+Ceci reste un défaut à corriger.
+
+Par la suite après avoir lancer le programme de simulation du ver vous aller voir apparaitre un certain nombre d'image dans le dossier /camera_save_ver/  placer vous dans ce répertoire et lancer la commande suivante :
+
+```bash
+$ fmpeg -r 30 -pattern_type glob -i '/tmp/camera_save_ver/default_distorted_camera_link_camera*.jpg' -c:v libx264 my_camera.mp4
+```
+Après avoir obtenue la vidéo au format mp4 placer la sur votre Bureau.
+
+
+
+
+
 
