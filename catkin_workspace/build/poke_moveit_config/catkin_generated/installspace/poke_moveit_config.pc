@@ -1,0 +1,8 @@
+prefix=/home/vincent/catkin_workspace/install
+
+Name: poke_moveit_config
+Description: Description of poke_moveit_config
+Version: 0.3.0
+Cflags: 
+Libs: -L/home/vincent/catkin_workspace/install/lib 
+Requires: 

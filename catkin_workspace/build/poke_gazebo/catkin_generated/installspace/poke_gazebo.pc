@@ -1,0 +1,8 @@
+prefix=/home/vincent/catkin_workspace/install
+
+Name: poke_gazebo
+Description: Description of poke_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/vincent/catkin_workspace/install/lib 
+Requires: 
